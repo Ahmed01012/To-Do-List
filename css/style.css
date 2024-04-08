@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(120deg, rgb(5, 5, 46) , rgb(70, 69, 69));
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    border: 2px solid rgb(124, 120, 120);
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+}
+.container h1{
+    text-transform: uppercase;
+    color: rgb(24, 17, 17);
+    margin: 0 0 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.container #incont{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px 0;
+}
+.container #incont input{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+}   
+.container #incont button{
+    background-color: rgb(24, 17, 17);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 150px;
+    margin-left: -20px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.container ul{
+    list-style: none;
+}
+.container ul li {
+    cursor: pointer;
+    margin: 10px auto 20px 30px ;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.container ul li.checked{
+    color: #4b4a4a;
+    text-decoration: line-through;
+}
+.container ul .remove::before{
+    content: "x";
+    text-align: center;
+    background-color: #eee ;
+    color: rgb(13, 13, 37);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+/* don't forget responsive mobile  */
